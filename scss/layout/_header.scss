@@ -1,0 +1,134 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  border: 1px solid #ececec;
+}
+
+.nav-link {
+  display: inline-block;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  text-align: center;
+  line-height: 1.19;
+  font-weight: 700;
+  color: var(--logo-text-color);
+  margin-right: 94px;
+}
+
+.span-logo {
+  color: var(--accent-text-color);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-list :hover,
+.nav-list :focus {
+  color: var(--accent-text-color);
+}
+
+.nav-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-list-item-current::after {
+  content: "";
+  display: block;
+  background-color: var(--accent-text-color);
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.nav-list-item-current-portfolio::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  display: block;
+  background-color: var(--accent-text-color);
+  width: 78px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.nav-list-link {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  color: var(--primary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.link-current {
+  color: var(--accent-text-color);
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-list-item {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  color: var(--secondary-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+  &:hover .envelope,
+  &:focus .envelope {
+    fill: var(--accent-text-color);
+  }
+  &:hover .smartphone,
+  &:focus .smartphone {
+    fill: var(--accent-text-color);
+  }
+}
+
+.envelope {
+  fill: var(--secondary-text-color);
+  margin-right: 10px;
+}
+
+.smartphone {
+  fill: var(--secondary-text-color);
+  margin-right: 10px;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
