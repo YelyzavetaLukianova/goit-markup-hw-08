@@ -19,7 +19,7 @@
   </head>
   <body>
     <!--============================header-portfolio==================================================== -->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header-container">
         <nav class="nav">
           <a class="nav-link" href="/"
@@ -75,7 +75,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
       <!--===========================our projects=======================================================-->
       <section class="project-section section">
@@ -103,13 +103,36 @@
           <ul class="portfolio-list">
             <li class="portfolio-list-item">
               <div class="overlay-div">
-                <a class="portfolio-list-link" href=""
-                  ><img
-                    src="./images/page-portpholio/тexнокряк.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    height="294"
-                /></a>
+                <a class="portfolio-list-link" href="">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/page-portpholio/тexнокряк-desk@1x.jpg 1x,
+                        ./images/page-portpholio/тexнокряк-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page-portpholio/тexнокряк-tab@1x.jpg 1x,
+                        ./images/page-portpholio/тexнокряк-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/page-portpholio/тexнокряк-mob@1x.jpg 1x,
+                        ./images/page-portpholio/тexнокряк-mob@2x.jpg 2x
+                      "
+                      media="(min-width:480px)"
+                    />
+                    <img
+                      src="./images/page-portpholio/тexнокряк-mob@1x.jpg"
+                      alt="Технокряк"
+                      width="450"
+                    />
+                  </picture>
+                </a>
                 <p class="overlay">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -298,75 +321,76 @@
     <!-- ================================footer-portfolio================================================= -->
     <footer class="footer-section footer">
       <div class="container footer-container">
-        <div class="address-container">
-          <a href="/" class="logo-link-footer link"
-            ><span class="span-logo footer-logo">Web</span
-            ><span class="footer-logo span-logo-footer">Studio</span></a
-          >
-          <address>
-            <ul class="footer-list list">
-              <li class="footer-list-item">
-                <a
-                  href="https://goo.gl/maps/m9XbSz5AdhFNor2G7"
-                  class="footer-text link address"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="footer-container-tablet">
+          <div class="address-container">
+            <a href="/" class="logo-link-footer link"
+              ><span class="span-logo footer-logo">Web</span
+              ><span class="footer-logo span-logo-footer">Studio</span></a
+            >
+            <address>
+              <ul class="footer-list list">
+                <li class="footer-list-item">
+                  <a
+                    href="https://goo.gl/maps/m9XbSz5AdhFNor2G7"
+                    class="footer-text link address"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer-list-item">
+                  <a
+                    href="mailto:info@example.com"
+                    class="footer-email footer-address link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-list-item">
+                  <a href="tel:+380991111111" class="footer-address link"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer-social-container">
+            <h3 class="footer-social-title">присоединяйтесь</h3>
+            <ul class="footer-social-list">
+              <li class="footer-social-list-item">
+                <a class="footer-social-list-link" href="">
+                  <svg class="footer-social-list-icon" width="20" height="20">
+                    <use
+                      href="./images/for-sprite/sprite.svg#icon-instagram"
+                    ></use></svg
+                ></a>
               </li>
-              <li class="footer-list-item">
-                <a
-                  href="mailto:info@example.com"
-                  class="footer-email footer-address link"
-                  >info@example.com</a
-                >
+              <li class="footer-social-list-item">
+                <a class="footer-social-list-link" href="">
+                  <svg class="footer-social-list-icon" width="20" height="20">
+                    <use
+                      href="./images/for-sprite/sprite.svg#icon-twitter"
+                    ></use></svg
+                ></a>
               </li>
-              <li class="footer-list-item">
-                <a href="tel:+380991111111" class="footer-address link"
-                  >+38 099 111 11 11</a
-                >
+              <li class="footer-social-list-item">
+                <a class="footer-social-list-link" href="">
+                  <svg class="footer-social-list-icon" width="20" height="20">
+                    <use
+                      href="./images/for-sprite/sprite.svg#icon-facebook"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="footer-social-list-item">
+                <a class="footer-social-list-link" href="">
+                  <svg class="footer-social-list-icon" width="20" height="20">
+                    <use
+                      href="./images/for-sprite/sprite.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-
-        <div class="footer-social-container">
-          <h3 class="footer-social-title">присоединяйтесь</h3>
-          <ul class="footer-social-list">
-            <li class="footer-social-list-item">
-              <a class="footer-social-list-link" href="">
-                <svg class="footer-social-list-icon" width="20" height="20">
-                  <use
-                    href="./images/for-sprite/sprite.svg#icon-instagram"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="footer-social-list-item">
-              <a class="footer-social-list-link" href="">
-                <svg class="footer-social-list-icon" width="20" height="20">
-                  <use
-                    href="./images/for-sprite/sprite.svg#icon-twitter"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="footer-social-list-item">
-              <a class="footer-social-list-link" href="">
-                <svg class="footer-social-list-icon" width="20" height="20">
-                  <use
-                    href="./images/for-sprite/sprite.svg#icon-facebook"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="footer-social-list-item">
-              <a class="footer-social-list-link" href="">
-                <svg class="footer-social-list-icon" width="20" height="20">
-                  <use
-                    href="./images/for-sprite/sprite.svg#icon-linkedin"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
         <div>
           <h3 class="footer-social-title">Подпишитесь на рассылку</h3>
           <div>
