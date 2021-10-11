@@ -1,3 +1,9 @@
+.we-do-section {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
 .we-do-list {
   display: flex;
 }

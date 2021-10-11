@@ -1,6 +1,16 @@
 .our-team-section {
   background-color: #f5f4fa;
 }
+
+.our-team-title {
+  margin-bottom: 30px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
 .section-title-list {
   font-weight: 500;
   font-size: 16px;
@@ -16,11 +26,6 @@
   color: var(--secondary-text-color);
   text-align: center;
   margin-bottom: 16px;
-}
-
-.our-team-title {
-  margin-bottom: 50px;
-  text-align: center;
 }
 
 .our-team-list {

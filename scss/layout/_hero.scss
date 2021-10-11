@@ -7,25 +7,44 @@
     url(../images/background-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  width: 100%;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  outline: 2px solid red;
+
+  @media screen and (min-width: 480px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
-  font-family: Roboto;
-  font-size: 44px;
+  max-width: 360px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.36;
-  color: var(--black-background-text-color);
-  max-width: 696px;
+  line-height: 1.62;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  margin: 0px auto;
   margin-bottom: 30px;
+  color: var(--black-background-text-color);
+
+  @media screen and (min-width: 480px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__btn {
