@@ -74,7 +74,7 @@
     </header> -->
     <main>
       <!--=======================hero=========================================-->
-      <section class="hero__section">
+      
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button
@@ -85,10 +85,10 @@
             Заказать услугу
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!--=======================features===================================-->
-      <!-- <section class="features__section">
+      <section class="features__section">
         <div class="features container">
           <h2 class="visually-hidden">Наши сильные стороны</h2>
           <ul class="features__list">
@@ -144,7 +144,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--======================we-do=============================================-->
       <section class="we-do-section section">
         <div class="container">
@@ -184,14 +184,37 @@
       <section class="our-team-section section">
         <div class="our-team-container container">
           <h2 class="our-team-title section-title">Наша команда</h2>
-          <ul class="our-team-list list">
+          <ul class="our-team-list">
             <li class="our-team-list-item">
-              <img
-                src="./images/teamcard1.jpg"
-                alt="Дизайнер"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/teamcard1-desk@1x.jpg 1x,
+                    ./images/our-team/teamcard1-desk@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/teamcard1-tab@1x.jpg 1x,
+                    ./images/our-team/teamcard1-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/teamcard1-mob@1x.jpg 1x,
+                    ./images/our-team/teamcard1-mob@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/our-team/teamcard1-mob@1x.jpg"
+                  alt="Дизайнер"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="our-team-div">
                 <h3 class="section-title-list">Игорь Демьяненко</h3>
                 <p class="our-team-text">Product Designer</p>
@@ -233,12 +256,31 @@
               </div>
             </li>
             <li class="our-team-list-item">
-              <img
-                src="./images/teamcard2.jpg"
-                alt="Разработчик"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/teamcard2-desk@1x.jpg 1x,
+                    ./images/our-team/teamcard2-desk@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/teamcard2-tab@1x.jpg 1x,
+                    ./images/our-team/teamcard2-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/teamcard2-mob@1x.jpg 1x,
+                    ./images/our-team/teamcard2-mob@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+
+                <img src="#" alt="Разработчик" />
+              </picture>
               <div class="our-team-div">
                 <h3 class="section-title-list">Ольга Репина</h3>
                 <p class="our-team-text">Frontend Developer</p>
@@ -280,12 +322,31 @@
               </div>
             </li>
             <li class="our-team-list-item">
-              <img
-                src="./images/teamcard3.jpg"
-                alt="Маркетолог"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/teamcard3-desk@1x.jpg 1x,
+                    ./images/our-team/teamcard3-desk@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/teamcard3-tab@1x.jpg 1x,
+                    ./images/our-team/teamcard3-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/teamcard3-mob@1x.jpg 1x,
+                    ./images/our-team/teamcard3-mob@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+
+                <img src="#" alt="Маркетолог" />
+              </picture>
               <div class="our-team-div">
                 <h3 class="section-title-list">Николай Тарасов</h3>
                 <p class="our-team-text">Marketing</p>
@@ -327,12 +388,31 @@
               </div>
             </li>
             <li class="our-team-list-item">
-              <img
-                src="./images/teamcard4.jpg"
-                alt="Дизайнер"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/teamcard4-desk@1x.jpg 1x,
+                    ./images/our-team/teamcard4-desk@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/teamcard4-tab@1x.jpg 1x,
+                    ./images/our-team/teamcard4-tab@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/teamcard4-mob@1x.jpg 1x,
+                    ./images/our-team/teamcard4-mob@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+
+                <img src="#" alt="Дизайнер" />
+              </picture>
               <div class="our-team-div">
                 <h3 class="section-title-list">Михаил Ермаков</h3>
                 <p class="our-team-text">UI Designer</p>
@@ -379,7 +459,7 @@
     </main>
 
     <!-- =========================clients========================= -->
-    <!-- <section class="section">
+    <section class="section">
       <div class="container">
         <h2 class="clients-title section-title">Постоянные клиенты</h2>
         <ul class="clients-list">
@@ -405,7 +485,7 @@
           </li>
           <li class="clients-list-item">
             <div class="clients-list-container">
-              <a href="">
+              <a class="clients-list-link" href="">
                 <svg class="clients-icon">
                   <use
                     href="./images/for-sprite/sprite.svg#icon-group3"
@@ -445,9 +525,9 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
     <!-- =========================footer======================================================== -->
-    <!-- <footer class="footer-section footer">
+    <footer class="footer-section footer">
       <div class="container footer-container">
         <div class="address-container">
           <a href="/" class="logo-link-footer link"
@@ -543,7 +623,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- ==============modal========================================= -->
     <!-- <div class="backdrop is-hidden" data-modal>

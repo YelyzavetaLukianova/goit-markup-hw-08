@@ -1,5 +1,10 @@
 .our-team-section {
   background-color: #f5f4fa;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
 
 .our-team-title {
@@ -19,6 +24,7 @@
   text-align: center;
   margin-bottom: 10px;
 }
+
 .our-team-text {
   font-weight: 400;
   font-size: 16px;
@@ -29,16 +35,43 @@
 }
 
 .our-team-list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .our-team-list-item {
+  width: 450px;
+  height: 622px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  &:not(:last-child) {
+  &:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+  &:nth-child(odd) {
     margin-right: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 15px);
+    height: 536px;
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 4 - 15px);
+    height: 428px;
+    &:nth-child(-n + 5) {
+      margin-bottom: 0px;
+    }
+    &:nth-child(-n + 3) {
+      margin-right: 20px;
+    }
   }
 }
 
@@ -79,5 +112,5 @@
 }
 
 .social-list-icon {
-  fill: var(--icon-fill);
+  fill: #afb1b8;
 }
