@@ -171,11 +171,7 @@
 }
 
 // ------mobile-menu--------
-.burger-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .mobile-menu-container {
   position: relative;
   padding-top: 48px;
@@ -198,8 +194,7 @@
   visibility: hidden;
   pointer-events: none;
 }
-
-.mobile-menu .is-open {
+.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;

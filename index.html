@@ -24,16 +24,9 @@
     <header class="header">
       <div class="container header-container">
         <nav class="nav">
-          <div class="burger-container">
-            <a class="nav-link" href="/"
-              ><span class="span-logo">Web</span>Studio</a
-            >
-            <button class="burger-btn" type="button" open-menu>
-              <svg class="burger-icon">
-                <use href="./images/for-sprite/sprite.svg#icon-burger"></use>
-              </svg>
-            </button>
-          </div>
+          <a class="nav-link" href="/"
+            ><span class="span-logo">Web</span>Studio</a
+          >
 
           <ul class="nav-list">
             <li class="nav-list-item nav-list-item-current">
@@ -49,6 +42,15 @@
             </li>
           </ul>
         </nav>
+        <button
+          class="burger-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+        >
+          <svg class="burger-icon">
+            <use href="./images/for-sprite/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
 
         <ul class="contacts">
           <li class="contacts-list">
@@ -81,8 +83,10 @@
       </div>
       <!-- ==========mobile-menu======================= -->
 
-      <div class="mobile-menu container mobile-menu-container" menu-container>
-        <button class="burger-close-btn" close-menu>
+      <div
+        class="mobile-menu container mobile-menu-container js-menu-container"
+      >
+        <button class="burger-close-btn js-close-menu">
           <svg class="burger-close-icon">
             <use href="./images/for-sprite/sprite.svg#icon-burger-close"></use>
           </svg>
