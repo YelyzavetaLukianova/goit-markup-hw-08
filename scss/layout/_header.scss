@@ -171,7 +171,12 @@
 }
 
 // ------mobile-menu--------
-
+.mobile-menu-position {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 600px;
+}
 .mobile-menu-container {
   position: relative;
   padding-top: 48px;
