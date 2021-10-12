@@ -592,11 +592,33 @@ img {
   margin-right: 10px;
 }
 
+.burger-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .mobile-menu-container {
   position: relative;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .mobile-menu {
@@ -607,12 +629,18 @@ img {
   height: 100vh;
   background-color: #ffffff;
   z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobile-menu .is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .burger-btn {
-  position: fixed;
-  top: 10px;
-  right: 10px;
   background-color: transparent;
   border: none;
   padding: 0px;
@@ -622,6 +650,12 @@ img {
 .burger-btn:hover .burger-icon,
 .burger-btn:focus .burger-icon {
   fill: var(--accent-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
 }
 
 .burger-icon {
@@ -654,7 +688,8 @@ img {
   text-align: start;
 }
 
-.mobile-menu-item {
+.mobile-menu-link {
+  display: block;
   font-weight: 500;
   font-size: 40px;
   color: #212121;
@@ -662,16 +697,17 @@ img {
   letter-spacing: 0.02em;
 }
 
-.mobile-menu-item:not(:last-child) {
+.mobile-menu-link:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.mobile-menu-item:hover, .mobile-menu-item:focus {
+.mobile-menu-link:hover, .mobile-menu-link:focus {
   color: var(--accent-text-color);
 }
 
 .mobile-contacts-list {
   text-align: start;
+  margin-bottom: 64px;
 }
 
 .mobile-contacts-tel {
@@ -691,7 +727,6 @@ img {
   color: #757575;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  margin-bottom: 64px;
 }
 
 .mobile-social-list {
@@ -702,6 +737,7 @@ img {
       -ms-flex-pack: start;
           justify-content: start;
   margin-right: -30px;
+  margin-bottom: 48px;
 }
 
 .mobile-social-link {
@@ -712,7 +748,6 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   margin-right: 30px;
-  margin-bottom: 48px;
 }
 
 .hero__section {
