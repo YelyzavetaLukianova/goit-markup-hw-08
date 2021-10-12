@@ -11,15 +11,32 @@
 
 .nav-link {
   display: inline-block;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
   text-align: center;
-  line-height: 1.19;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
+  letter-spacing: 0.03em;
   color: var(--logo-text-color);
-  margin-right: 94px;
+
+  @media screen and (min-width: 480px) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 1.18;
+    margin-right: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 94px;
+  }
 }
 
 .span-logo {
@@ -32,17 +49,22 @@
 }
 
 .nav-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
-.nav-list :hover,
-.nav-list :focus {
-  color: var(--accent-text-color);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-text-color);
+    }
+  }
 }
 
 .nav-list-item:not(:last-child) {
@@ -75,6 +97,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
@@ -85,8 +108,31 @@
 }
 
 .contacts {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: -10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contacts-list {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
 }
 
 .contacts-list-item {
@@ -124,11 +170,121 @@
   margin-right: 10px;
 }
 
-.contacts-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  &:not(:last-child) {
-    margin-right: 50px;
+// ------mobile-menu--------
+
+.mobile-menu-container {
+  position: relative;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 5;
+}
+
+.burger-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  line-height: 0;
+  &:hover .burger-icon,
+  &:focus .burger-icon {
+    fill: var(--accent-text-color);
   }
+}
+
+.burger-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.burger-close-btn {
+  position: fixed;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  z-index: 60;
+  line-height: 0;
+  &:hover .burger-close-icon,
+  &:focus .burger-close-icon {
+    fill: var(--accent-text-color);
+  }
+}
+
+.burger-close-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-menu-list {
+  text-align: start;
+}
+
+.mobile-menu-item {
+  font-weight: 500;
+  font-size: 40px;
+  color: #212121;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+
+.mobile-contacts-list {
+  text-align: start;
+}
+
+.mobile-contacts-tel {
+  display: block;
+  font-weight: 500;
+  font-size: 34px;
+  color: var(--accent-text-color);
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+}
+
+.mobile-contacts-email {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  color: #757575;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  margin-bottom: 64px;
+}
+
+.mobile-social-list {
+  display: flex;
+  justify-content: start;
+  margin-right: -30px;
+}
+
+.mobile-social-link {
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--accent-text-color);
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  margin-right: 30px;
+  margin-bottom: 48px;
 }

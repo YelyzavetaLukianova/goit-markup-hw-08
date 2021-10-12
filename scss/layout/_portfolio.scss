@@ -21,9 +21,12 @@
   }
 }
 
-.portfolio-btn-item:hover,
-.portfolio-btn-item:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.portfolio-btn-item {
+  margin-top: 15px;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .portfolio-list {
@@ -52,8 +55,9 @@
   }
 
   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
     width: calc(100% / 2 - 30px);
-    min-height: 440px;
     margin-right: 30px;
   }
   &:nth-child(-n + 8) {
@@ -62,7 +66,6 @@
 
   @media screen and (min-width: 1200px) {
     width: calc(100% / 3 - 30px);
-    min-height: 404px;
     margin-right: 30px;
   }
   &:nth-child(-n + 6) {
@@ -99,6 +102,7 @@
 .portfolio-div {
   padding: 20px 24px 20px 24px;
   border: #eeeeee solid 0.5px;
+  flex-grow: 1;
 }
 
 .portfolio-project-par {
@@ -107,13 +111,20 @@
 
 .our-projects-btn-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -15px;
+
+  @media screen and (max-width: 767px) {
+    justify-content: start;
+    margin-bottom: 40px;
+  }
 
   & > :not(:last-child) {
     margin-right: 8px;
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
+    justify-content: center;
     margin-bottom: 40px;
   }
 

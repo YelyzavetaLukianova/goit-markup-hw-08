@@ -21,12 +21,20 @@
 
   <!-- =========================Header===================================== -->
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
-        <nav class="nav">
+        
+          <nav class="nav">
           <a class="nav-link" href="/"
             ><span class="span-logo">Web</span>Studio</a
           >
+        <button class="burger-btn" type="button" open-menu>
+          <svg class="burger-icon" width="24" height="16">
+                <use href="./images/for-sprite/sprite.svg#icon-burger"></use>
+              </svg>
+        </button>
+        
+
           <ul class="nav-list">
             <li class="nav-list-item nav-list-item-current">
               <a href="./index.html" class="nav-list-link link-current"
@@ -41,6 +49,7 @@
             </li>
           </ul>
         </nav>
+        
 
         <ul class="contacts">
           <li class="contacts-list">
@@ -71,7 +80,55 @@
           </li>
         </ul>
       </div>
-    </header> -->
+      <div class="mobile-menu container mobile-menu-container" menu-container>
+        <button class="burger-close-btn" close-menu><svg class="burger-close-icon">
+                <use href="./images/for-sprite/sprite.svg#icon-burger-close"></use>
+              </svg></button>
+
+              <ul class="mobile-menu-list">
+            <li class="mobile-menu-item mobile-menu-item-current">
+              <a href="./index.html" class="mobile-menu-link link-current"
+                >Студия</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a href="./portfolio.html" class="mobile-menu-link">Портфолио</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="" class="mobile-menu-link">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-contacts-list">             
+            <li class="mobile-contacts-item">
+            <a              
+              class="mobile-contacts-tel"
+              href="tel:+380961111111"
+            >           
+              +38 096 111 11 11
+            </a>
+          </li>
+
+          <li class="mobile-contacts-item">
+            <a             
+              class="mobile-contacts-email"
+              href="mailto:info@devstudio.com"
+            >
+            info@devstudio.com
+          </a>
+          </li>
+          
+        </ul>
+
+        <ul class="mobile-social-list">
+          <li class="mobile-social-item"><a class="mobile-social-link" href="">Instagram</a></li>
+          <li class="mobile-social-item"><a class="mobile-social-link" href="">Twitter</a></li>
+          <li class="mobile-social-item"><a class="mobile-social-link" href="">Facebook</a></li>
+          <li class="mobile-social-item"><a class="mobile-social-link" href="">LinkedIn</a></li>
+        </ul>
+        
+      </div>
+    </header>
     <main>
       <!--=======================hero=========================================-->
       
@@ -212,7 +269,7 @@
                   src="./images/our-team/teamcard1-mob@1x.jpg"
                   alt="Дизайнер"
                   width="450"
-                  height="460"
+                  
                 />
               </picture>
               <div class="our-team-div">
@@ -278,8 +335,11 @@
                   "
                   media="(min-width:320px)"
                 />
-
-                <img src="#" alt="Разработчик" />
+                <img
+                  src="./images/our-team/teamcard2-mob@1x.jpg"
+                  alt="Разработчик"
+                  width="450"                  
+                />                
               </picture>
               <div class="our-team-div">
                 <h3 class="section-title-list">Ольга Репина</h3>
@@ -344,8 +404,11 @@
                   "
                   media="(min-width:320px)"
                 />
-
-                <img src="#" alt="Маркетолог" />
+                <img
+                  src="./images/our-team/teamcard3-mob@1x.jpg"
+                  alt="Маркетолог"
+                  width="450"                  
+                />   
               </picture>
               <div class="our-team-div">
                 <h3 class="section-title-list">Николай Тарасов</h3>
@@ -410,8 +473,11 @@
                   "
                   media="(min-width:320px)"
                 />
-
-                <img src="#" alt="Дизайнер" />
+                <img
+                  src="./images/our-team/teamcard4-mob@1x.jpg"
+                  alt="Дизайнер"
+                  width="450"                  
+                /> 
               </picture>
               <div class="our-team-div">
                 <h3 class="section-title-list">Михаил Ермаков</h3>
@@ -711,5 +777,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script scr="./js/menu.js"></script>
   </body>
 </html>
