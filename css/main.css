@@ -667,11 +667,11 @@ img {
 .burger-close-btn {
   position: fixed;
   top: 10px;
-  right: 15px;
+  right: 25px;
   background-color: transparent;
   border: none;
   padding: 0px;
-  z-index: 60;
+  z-index: 160;
   line-height: 0;
 }
 
